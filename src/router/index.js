@@ -24,30 +24,36 @@ export const constantRouterMap = [
     hidden: true,
   },
   {
-    name: 'basic',
-    path: '/basic',
+    name: 'barChart1',
+    path: '/basic/barChart1',
     redirect: '',
-    component: () => import("@/views/basic"),
-    chunkName: 'views/basic',
-    hidden: true,
-    children: [
-      {
-        name: 'barChart',
-        path: '/basic/barChart',
-        redirect: '',
-        component: () => import("@/views/basic/barChart"),
-        chunkName: 'views/basic/barChart',
-        hidden: true
-      }
-    ]
+    component: () => import("@/views/basic/barChart1"),
+    chunkName: 'views/basic/barChart1',
+    hidden: true
   },
   {
-    name: 'specific',
-    path: '/specific',
+    name: 'barChart2',
+    path: '/basic/barChart2',
     redirect: '',
-    component: () => import("@/views/specific"),
-    chunkName: 'views/specific',
-    hidden: true,
+    component: () => import("@/views/basic/barChart2"),
+    chunkName: 'views/basic/barChart2',
+    hidden: true
+  },
+  {
+    name: 'barChart3',
+    path: '/basic/barChart3',
+    redirect: '',
+    component: () => import("@/views/basic/barChart3"),
+    chunkName: 'views/basic/barChart3',
+    hidden: true
+  },
+  {
+    name: 'threeCircles',
+    path: '/basic/threeCircles',
+    redirect: '',
+    component: () => import("@/views/basic/threeCircles"),
+    chunkName: 'views/basic/threeCircles',
+    hidden: true
   }
 ]
 

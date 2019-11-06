@@ -1,6 +1,6 @@
 <template>
-  <div class="basic-pages">
-    <router-link to="/barChart">barChart</router-link>
+  <div class="three-circles-page">
+    three-circle-page
   </div>
 </template>
 
